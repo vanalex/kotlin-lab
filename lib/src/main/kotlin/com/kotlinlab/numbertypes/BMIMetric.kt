@@ -1,4 +1,4 @@
-package com.kotlinlab.NumberTypes
+package com.kotlinlab.numbertypes
 
 fun bmiMetric(weight: Double,
               height: Double): String {

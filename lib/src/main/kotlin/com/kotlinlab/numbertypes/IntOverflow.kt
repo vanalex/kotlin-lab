@@ -1,4 +1,4 @@
-package com.kotlinlab.NumberTypes
+package com.kotlinlab.numbertypes
 
 fun main(){
     val i: Int = Int.MAX_VALUE
