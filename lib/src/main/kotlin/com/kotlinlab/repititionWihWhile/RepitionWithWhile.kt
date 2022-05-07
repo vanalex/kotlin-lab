@@ -1,4 +1,4 @@
-package com.kotlinlab.conditions
+package com.kotlinlab.repititionWihWhile
 
 fun condition(i : Int) = i < 100
 
