@@ -8,5 +8,5 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
-rootProject.name = "com.kotlinlab"
+rootProject.name = "kotlinlab"
 include("lib")
