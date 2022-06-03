@@ -6,4 +6,3 @@
 *.kotlin_module
 build
 .gradle
-*.jar
