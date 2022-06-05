@@ -17,6 +17,6 @@ class StringTest {
     @Test
     fun printStringTemplateTest(){
         val answer = 42
-        assertEquals("Found 42!", "Found $answer!")
+        assertEquals("Found 42", "Found $answer!")
     }
 }
