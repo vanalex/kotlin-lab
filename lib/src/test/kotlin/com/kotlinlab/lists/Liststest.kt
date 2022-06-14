@@ -12,7 +12,7 @@ class Liststest {
     }
 
     @Test
-    fun testSumListElements(){
+    fun testConcatListElements(){
         val integers = listOf(2, 4, 10, 12, 9, 7)
         var result = ""
         for (i in integers) {
@@ -20,6 +20,13 @@ class Liststest {
         }
 
         assertEquals("2 4 10 12 9 7 ", result)
+    }
+
+    @Test
+    fun testSumListElements(){
+        val integers = listOf(2, 4, 10, 12, 9, 7)
+
+        assertEquals(44, integers.sum())
     }
 
     @Test
@@ -36,5 +43,15 @@ class Liststest {
     fun testSumElementOfList(){
         val doubles = listOf(1.1, 2.2, 3.3, 4.4)
         assertEquals(doubles.sum(), 11.0)
+    }
+
+    @Test
+    fun testOperationsOnListOfString(){
+        val strings = listOf("Twas", "Brillig", "And", "Slithy", "Toves")
+        assertEquals(strings, listOf("Twas", "Brillig", "And", "Slithy", "Toves"))
+        assertEquals(strings.sorted(), listOf("And", "Brillig", "Slithy", "Toves", "Twas"))
+        assertEquals(strings.reversed(), listOf("Toves", "Slithy", "And", "Brillig", "Twas"))
+        assertEquals(strings.first(),"Twas")
+        assertEquals(strings.takeLast(2), listOf("Slithy", "Toves"))
     }
 }
