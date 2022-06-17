@@ -66,7 +66,7 @@ class Liststest {
                             Person("Cal", 25))
 
     @Test
-    fun testAnyCollection(){
+    fun testCollectionOperations(){
         assertTrue(friendsGroup.any{it.driversLicense})
         assertFalse(friendsGroup.none { it.age < 18 })
         assertTrue(friendsGroup.all { it.name.length < 4 })
@@ -76,5 +76,7 @@ class Liststest {
         assertTrue(emptyPersonList.none { it.age < 18 })
         assertTrue(emptyPersonList.all { it.name.count() < 4 })
 
+        val lettersInNames = listOf("Lou", "Mel", "Cyn").flatMap { it.toList() }
+        assertEquals(listOf('L', 'o', 'u', 'M','e','l', 'C', 'y', 'n'), lettersInNames)
     }
 }
