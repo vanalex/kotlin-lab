@@ -1,0 +1,12 @@
+*.iws
+.ds_store
+out/
+.idea_modules/
+.gradle/
+.idea/
+build/
+presources/
+*.iml
+local.properties
+
+/src/main/resources/yoda_key.txt
