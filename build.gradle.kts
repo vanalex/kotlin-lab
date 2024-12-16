@@ -1,5 +1,8 @@
 plugins {
     kotlin("jvm") version "2.0.21"
+    alias(libs.plugins.versions)
+    alias(libs.plugins.version.catalog.update)
+    alias(libs.plugins.graal)
 }
 
 group = "org.example"
@@ -11,6 +14,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation(libs.assertj)
 }
 
 tasks.test {
