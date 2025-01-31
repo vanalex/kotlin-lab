@@ -13,13 +13,16 @@ repositories {
 }
 
 dependencies {
+    implementation(kotlin("test"))
     testImplementation(kotlin("test"))
     testImplementation(libs.assertj)
+    testImplementation("org.jetbrains.kotlin:kotlin-test:2.0.21")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:2.0.21")
 }
 
 tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
