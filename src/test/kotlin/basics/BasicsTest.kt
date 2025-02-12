@@ -1,3 +1,5 @@
+package basics
+
 import org.example.basics.max
 import org.junit.jupiter.api.Test
 

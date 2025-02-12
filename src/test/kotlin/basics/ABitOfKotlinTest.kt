@@ -1,3 +1,5 @@
+package basics
+
 import org.example.taste.Person
 import org.junit.jupiter.api.Test
 import kotlin.test.assertNotNull

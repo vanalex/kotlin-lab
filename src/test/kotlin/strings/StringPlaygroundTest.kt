@@ -1,3 +1,5 @@
+package strings
+
 import org.example.strings.templatifyGreeting
 import org.example.strings.templatifyGreetingWithIf
 import org.junit.jupiter.api.Test
