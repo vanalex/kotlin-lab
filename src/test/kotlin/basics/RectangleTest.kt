@@ -1,6 +1,7 @@
 package basics
 
 import org.example.basics.Rectangle
+import org.example.basics.createUnitSquare
 import kotlin.test.Test
 import kotlin.test.assertTrue
 
@@ -24,6 +25,12 @@ class RectangleTest {
       fun `test is not square`() {
             val rectangle = Rectangle(2, 3)
             assert(!rectangle.isSquare())
+      }
+
+      @Test
+      fun `test is larger`() {
+            val square = createUnitSquare()
+            assert(square.area() == 1)
       }
 
  }

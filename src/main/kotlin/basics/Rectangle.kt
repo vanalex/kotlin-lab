@@ -23,3 +23,7 @@ class Rectangle(val height: Int, val width: Int): Shape {
         return this.area() > other.area()
     }
 }
+
+fun createUnitSquare(): Shape {
+    return Rectangle(height = 1, width = 1)
+}
